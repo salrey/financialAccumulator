@@ -1,87 +1,115 @@
-const bitcoinTrades = require('./data/bitcoinTrades.json');
-const etheriumTrades = require('./data/etheriumTrades.json');
-const currencies = require('./data/currencies.json');
+const bitcoinTrades = require("./data/bitcoinTrades.json");
+const etheriumTrades = require("./data/etheriumTrades.json");
+const currencies = require("./data/currencies.json");
 
-// Use the bitcoinTrades and etheriumTrades variables above to solve these
-// Round to two decimal places
+// Use the bitcoinTrades, etheriumTrades, and currencies variables above to solve these.
+// Round to two decimal places.
 
-// Issue: ToFixed returns a string, so we have to convert it back to a number
-// This is a helper function that rounds and converts to a number
-function roundNum(num){
-    return Number(num.toFixed(2));
-}
+// Issue: toFixed returns a string, so we have to convert it back to a number.
+// This is a helper function that rounds to two decimal plaes and converts that string back to a number.
+function roundNum(num) {}
 
-// Find the totalPrice
-function findTotalPrice(trades){
+// console.log(roundNum(3.1415));
+// >> 3.14
+// console.log(roundNum(3.145));
+// >> 3.15
+// console.log(typeof roundNum(3.1415))
+// >> 'number'
 
-}
-// Find the highestPrice
-function findHighestPrice(trades){
+// Find the total price of all trades.
+function findTotalPrice(trades) {}
 
-}
-// Find the averagePrice
-function findAveragePrice(trades){
+// console.log(findTotalPrice(bitcoinTrades));
+// >> 41815183.19
 
-}
-// Find the lowestPrice
-function findLowestPrice(trades){
+// Find the highest price of all trades.
+function findHighestPrice(trades) {}
 
-}
+// console.log(findHighestPrice(bitcoinTrades));
+// >> 41850.03
 
-// Find the totalSize
-function findTotalSize(trades){
+// Find the average price of all trades.
+function findAveragePrice(trades) {}
 
-}
-// Find the highestSize
-function findHighestSize(trades){
+// console.log(findAveragePrice(bitcoinTrades));
+// >> 41815.18
 
-}
-// Find the averageSize
-function findAverageSize(trades){
+// Find the lowest price of all trades.
+function findLowestPrice(trades) {}
 
-}
-// Find the lowestSize
-function findLowestSize(trades){
+// console.log(findLowestPrice(bitcoinTrades));
+// >> 41781.9
 
-}
+// Find the total size of all trades.
+function findTotalSize(trades) {}
 
-function findPriceDetails(trades, tradeType){
+// console.log(findTotalSize(bitcoinTrades));
+// >> 106.58
 
-    // Filter out the trades by trade type i.e. buy/sell, if tradeType is not provided do not filter, if tradeType is an invalid input return an empty array
+// Find the highest size of all trades.
+function findHighestSize(trades) {}
 
-    return {
-        totalPrice: findTotalPrice(),
-        totalSize: findTotalSize(),
-        averagePrice: findAveragePrice(),
-        averageSize: findAverageSize(),
-        highestPrice: findHighestPrice(),
-        lowestPrice: findLowestPrice(),
-        highestSize: findHighestSize(),
-        lowestSize: findLowestSize()
-    }
-}
-// console.log(findPriceDetails(bitcoinTrades));
+// console.log(findHighestSize(bitcoinTrades));
+// >> 2.34
 
+// Find the average size of all trades.
+function findAverageSize(trades) {}
+
+// console.log(findAverageSize(bitcoinTrades));
+// >> 0.11
+
+// Find the lowest size of all trades.
+function findLowestSize(trades) {}
+
+// console.log(findLowestSize(bitcoinTrades));
+// >> 0
+
+// Filter the trades by trade type i.e. buy/sell. If type is not provided do not filter. If type is an invalid input return an empty array.
+function getTradeType(trades, type) {}
+
+// console.log(getTradeType(bitcoinTrades, 'buy'));
+// >> [
+//      {
+//        "time": "2021-08-06T15:50:36.4683Z",
+//        "trade_id": 199703070,
+//        "price": "41844.06000000",
+//        "size": "0.00228569",
+//        "side": "buy"
+//      },
+//      {
+//      "time": "2021-08-06T15:50:34.130059Z",
+//      "trade_id": 199703067,
+//      "price": "41832.44000000",
+//      "size": "0.00101132",
+//      "side": "buy"
+//      },
+//      "time": "2021-08-06T15:50:33.547084Z",
+//      "trade_id": 199703045,
+//      "price": "41831.01000000",
+//      "size": "0.03739041",
+//      "side": "buy"
+//      },
+//      ...
+// ]
+
+// Get all the info (total price, average size, etc.) of all trades.
+function getFullInfo(trades) {}
+
+// console.log(getFullInfo(bitcoinTrades));
 // >> {
-//     totalPrice: xxx.19,
-//     totalSize: xxx.58,
-//     averagePrice: xxx.18,
-//     averageSize: xxx.11,
-//     highestPrice: xxx.03,
-//     lowestPrice: xxx.9,
-//     highestSize: xxx.34,
-//     lowestSize: xxx
+//     totalPrice: 41815183.19,
+//     totalSize: 106.58,
+//     averagePrice: 41815.18,
+//     averageSize: 0.11,
+//     highestPrice: 41850.03,
+//     lowestPrice: 41781.9,
+//     highestSize: 2.34,
+//     lowestSize: 0
 // }
 
-// ---- Find the same data for Etherium ----
+// Return an object that contains the currency type as the key and an array of names/types strings as the value. See return example below for formatting.
+function findCurrencyTypeCounts(currencies) {}
 
-
-// Use the currencies data variable above to solve these
-
-// Return an object that contains the currency type as the key and an array of names/types strings as the value. See return type below for formatting
-function findCurrencyTypeCounts(currencies){
-
-}
 // console.log(findCurrencyTypeCounts(currencies));
 // {
 //     crypto: [

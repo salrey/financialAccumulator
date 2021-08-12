@@ -108,9 +108,9 @@ function getFullInfo(trades) {}
 // }
 
 // Return an object that contains the currency type as the key and an array of names/types strings as the value. See return example below for formatting.
-function findCurrencyTypeCounts(currencies) {}
+function categorizeCurrencies(currencies) {}
 
-// console.log(findCurrencyTypeCounts(currencies));
+// console.log(categorizeCurrencies(currencies));
 // {
 //     crypto: [
 //       'Dash(DASH)',

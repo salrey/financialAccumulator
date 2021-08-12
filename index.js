@@ -116,7 +116,11 @@ function categorizeCurrencies(currencies) {}
 //       'Dash(DASH)',
 //       'Orchid(OXT)',
 //       'Cosmos(ATOM)',
-//     ...
+//       ...
 //     ],
-//     fiat: [ 'British Pound(GBP)', 'United States Dollar(USD)' ]
+//     fiat: [
+//       'British Pound(GBP)',
+//       'United States Dollar(USD)',
+//       ...
+//     ]
 // }

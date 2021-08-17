@@ -245,3 +245,9 @@ function categorizeCurrencies(currencies) {
 //       ...
 //     ]
 // }
+
+////////////////
+////////////////
+module.exports = {
+    roundNum,
+}

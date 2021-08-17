@@ -1,0 +1,24 @@
+{
+  "name": "financialaccumulator",
+  "version": "1.0.0",
+  "description": "8.0 Practice Exercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "watch": "jest --watch-all"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salrey/financialAccumulator.git"
+  },
+  "keywords": [],
+  "author": "salrey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salrey/financialAccumulator/issues"
+  },
+  "homepage": "https://github.com/salrey/financialAccumulator#readme",
+  "dependencies": {
+    "jest": "^27.0.6"
+  }
+}
